@@ -1,0 +1,316 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: #f7fdfc;
+	font-size: 16px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: #f5f7fa;
+}
+
+.navbar {
+	/* Add your navbar styles */
+}
+
+header {
+	padding-inline: 40px;
+	padding-block-start: 28px;
+	padding-block-end: 32px;
+	border-bottom: 1px solid #e0e6ea;
+
+	> nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		> ul {
+			display: flex;
+			align-items: center;
+			gap: 42px;
+			list-style: none;
+			> li > a {
+				text-decoration: none;
+				color: #1d2c3c;
+				font-size: 14px;
+				font-weight: 700;
+				&:hover {
+					color: #9a2333;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+ul li .active {
+	border-radius: 6px;
+	border: 2px solid #646e7a;
+	padding: 12px 20px;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.main-content {
+	display: flex;
+	overflow: hidden;
+	max-width: 890px;
+	margin: 0 auto;
+	margin-top: 85px;
+	margin-bottom: 30px;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+		0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+}
+
+.checkout-form,
+.pricing-info {
+	flex: 1;
+}
+
+.checkout-form {
+	padding-top: 40px;
+	padding-bottom: 47px;
+}
+
+.checkout-form-body {
+	display: grid;
+	gap: 15px;
+}
+
+.checkout-form-header,
+.checkout-form-body,
+.checkout-form-footer {
+	padding-inline: 48px;
+}
+
+.checkout-form-body,
+.checkout-form-footer {
+	border-top: 1px solid #f5f7fa;
+	padding-top: 36px;
+	padding-bottom: 41px;
+}
+
+.checkout-form-header h2 {
+	color: #1d2c3c;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	/* font-family: ; */
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 40px;
+}
+
+.checkout-form-body .title {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+
+	> span {
+		width: 30px;
+		height: 30px;
+		border-radius: 100px;
+		border: 1px solid #548bc5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #548bc5;
+	}
+
+	> h3 {
+		font-size: 18px;
+	}
+}
+
+.form_row {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 30px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 4px;
+	border: none;
+	height: 48px;
+	background-color: #edeff2;
+	color: #646e7a;
+}
+
+.form-group input[type='email'] {
+	max-width: 370px;
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 4px;
+	border: none;
+	height: 48px;
+	background-color: #edeff2;
+	color: #646e7a;
+}
+
+.card_number_input {
+	max-width: 480px;
+	display: grid;
+	grid-template-columns: 4fr 2fr 1fr;
+	border-radius: 4px;
+	background-color: #edeff2;
+	padding: 8px 12px;
+
+	> input {
+		background-color: transparent;
+		border: none;
+	}
+}
+
+.checkout-form-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+}
+
+.btn-pay {
+	background-color: #038e7d;
+	width: 100%;
+	border-radius: 5px;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-pay:hover {
+	background-color: #218838;
+}
+
+.support-text {
+	display: flex;
+	gap: 8px;
+
+	> p {
+		color: #646e7a;
+		font-size: 14px;
+
+		> span {
+			color: #1d2c3c;
+			font-weight: 700;
+		}
+	}
+}
+
+.pricing-info {
+	background-color: #1179bf;
+	max-width: 312px;
+	width: 100%;
+	color: white;
+	padding-inline: 40px;
+	padding-top: 42px;
+
+	> .plan > h3 {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	> .plan > p {
+		font-style: italic;
+	}
+
+	> .testimonial {
+		padding-top: 43px;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		margin-top: 41px;
+
+		> p {
+			font-style: italic;
+		}
+
+		> .user {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			margin-top: 12px;
+
+			> img {
+				width: 40px;
+				height: 40px;
+				border-radius: 100px;
+			}
+		}
+	}
+}
+
+.footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #f8f9fa;
+	font-size: 0.8em;
+}
+
+/* Responsive Styles */
+/* @media (max-width: 768px) {
+	.main-content {
+		flex-direction: column;
+	}
+
+	.checkout-form,
+	.pricing-info {
+		width: 100%;
+		margin: 10px 0;
+	}
+} */

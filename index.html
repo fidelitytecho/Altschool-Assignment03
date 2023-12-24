@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <img src="./assets/logo.svg" alt="Logo" class="logo">
+      <ul>
+        <li><a href="index.html">Download</a></li>
+        <li><a href="index.html">Learn More</a></li>
+        <li><a href="index.html">Pricing</a></li>
+        <li><a href="index.html">Help</a></li>
+        <li><a href="index.html" class="active">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="main-content">
+      <div class="checkout-form">
+        <div class="checkout-form-header">
+          <h2>Checkout</h2>
+        </div>
+        <div class="checkout-form-body">
+          <div class="title">
+            <span>1</span>
+            <h3>Your Basic Information</h3>
+          </div>
+          <div class="form_row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="janedoe@example.com">
+          </div>
+        </div>
+        <div class="checkout-form-body">
+          <div class="title">
+            <span>2</span>
+            <h3>Your Payment Information</h3>
+          </div>
+          <div class="card_number_input">
+            <input type="text" placeholder="Card Number">
+            <input type="text" placeholder="MM/YY" id="month_year_input">
+            <input type="text" placeholder="CVC" id="cvc_input">
+          </div>
+        </div>
+        <div class="checkout-form-footer">
+          <button class="btn-pay">Buy WP Pusher</button>
+          <div class="support-text">
+            <img src="./assets/need_help.svg" alt="">
+            <p><span>Need any help?</span> Don't hesitate to contact support!</p>
+          </div>
+          <img src="./assets/powered_by_stripe.svg" alt="powered_by_stripe" />
+        </div>
+      </div>
+      <div class="pricing-info">
+        <div class="plan">
+          <h3>Freelancer</h3>
+          <p class="price">$99/year</p>
+          <p>Automatically renews after 1 year</p>
+        </div>
+        <div class="testimonial">
+          <p>FTP is horrible to deal with. <span>WP Pusher</span> solves that issue, and the customer support is
+            awesome!</p>
+
+          <div class="user">
+            <img src="./assets/Bitmap.png" alt="user avater" />
+            <span>Kirk Beard</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer">
+      © 2018 WP Pusher IVS · Terms of Service
+    </div>
+  </main>
+</body>
+
+</html>
